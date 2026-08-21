@@ -1,0 +1,15 @@
+function reverseString(str) {
+    let stack = [];
+    let result = '';
+
+    for(let i =0 ; i< str.length ; i++){
+        stack.push(str[i])
+    }
+    while(stack.length > 0){
+        result += stack.pop()
+    }
+
+    return result;
+}
+
+console.log(reverseString("deepak"))
